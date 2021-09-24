@@ -262,8 +262,8 @@
                                                     <a class="nav-link active" id="home-tab" data-toggle="tab"
                                                         href="#home" role="tab" aria-controls="home"
                                                         aria-selected="true">
-                                                        <div class="Bg__Icon actives">
-                                                            <img id="Img__one" src="./Assets/Group 866.png" alt="">
+                                                        <div class="Bg__Icon actives" id="ColorChange">
+                                                            <div id="Img__one"></div>
                                                         </div>
                                                     </a>
                                                 </li>
@@ -271,7 +271,7 @@
                                                     <a class="nav-link" id="profile-tab" data-toggle="tab"
                                                         href="#profile" role="tab" aria-controls="profile"
                                                         aria-selected="false">
-                                                        <div class="Bg__Icon Bg__Icon__new">
+                                                        <div id="btnss1" class="Bg__Icon Bg__Icon__new">
                                                             <img id="Img__Two" src="./Assets/v 1st.png" alt="">
                                                         </div>
                                                     </a>
@@ -280,7 +280,7 @@
                                                     <a class="nav-link" id="contact-tab" data-toggle="tab"
                                                         href="#contact" role="tab" aria-controls="contact"
                                                         aria-selected="false">
-                                                        <div class="Bg__Icon Bg__Icon__next">
+                                                        <div id="btnss2" class="Bg__Icon Bg__Icon__next">
                                                             <img id="Img__Three" src="./Assets/options (1) 1.png"
                                                                 alt="">
                                                         </div>
@@ -322,7 +322,8 @@
                                                                 </select>
                                                             </div>
                                                             <!-- Button -->
-                                                            <button class="nexttab btn btn-primary menu__pic">Next<i
+                                                            <button id="button" onClick="secBg()"
+                                                                class="nexttab btn btn-primary menu__pic">Next<i
                                                                     class="fas fa-chevron-right"></i></button>
                                                             <!-- Button -->
                                                         </div>
@@ -504,9 +505,11 @@
                                                             </div>
                                                             <!-- Button -->
                                                             <div class="center__btn">
-                                                                <button class="prevtab btn btn-primary"> <i
+                                                                <button onclick="frthBg()"
+                                                                    class="prevtab btn btn-primary"> <i
                                                                         class="fas fa-chevron-left"></i>Previous</button>
-                                                                <button class="nexttab btn btn-primary">Next <i
+                                                                <button onclick="thrdBg()"
+                                                                    class="nexttab btn btn-primary">Next <i
                                                                         class="fas fa-chevron-right"></i></button>
                                                             </div>
                                                             <!-- Button -->
@@ -702,8 +705,8 @@
                                                         </div>
                                                         <!-- Button -->
                                                         <div class="ajs">
-                                                            <button class="prevtab btn btn-primary"> <i
-                                                                    class="fas fa-chevron-left"></i>Previous </button>
+                                                            <button onClick="fthBg()" class="prevtab btn btn-primary">
+                                                                <i class="fas fa-chevron-left"></i>Previous </button>
                                                             <button class="nexttab btn btn-primary">Next <i
                                                                     class="fas fa-chevron-right"></i></button>
                                                         </div>
@@ -1413,7 +1416,7 @@
     <script src="./JS/TinyMc.js"></script>
     <script src="./JS/prevNext.js"></script>
     <script src="./JS/checkboxRd.js"></script>
-
+    <script src="./JS/BgActive.js"></script>
 </body>
 
 </html>
