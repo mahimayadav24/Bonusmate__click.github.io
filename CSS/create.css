@@ -253,6 +253,9 @@ body, html {
 .Bg__Icon #Img__one {
     position: absolute;
     top: 22px;
+    background-image: url('../Assets/Group 866.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 27px;
     left: 22px;
     right: 0;
